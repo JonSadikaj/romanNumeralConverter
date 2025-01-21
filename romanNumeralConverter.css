@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --background-color: gray;
+  --text-color: gold;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  background-color:var(--background-color);
+  color: var(--text-color);
+}
+
+h1{
+  margin: 20px 0;
+  text-align: center;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  width: clamp(300px, 50vw, 460px);
+  background-color: var(--background-color);
+}
+
+.input-container label{
+  white-space: nowrap;
+  overflow: hidden;
+  word-spacing: -3px;
+}
+
+.convert-btn{
+  font-size: inherit;
+  font-family: inherit;
+  background-color: var(--red-);
+  width: 100%;
+  padding: 0 5px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer; 
+  color: var(--text-color);
+}
+
+.number-input{
+  font-size: inherit;
+  width: 100%;
+}
+
+.output-container{
+  font-size: inherit;
+  width: clamp(300px, 50vw, 460px);
+}
+
+#result{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80px;
+  margin-block-start: 20px;
+  padding: 15px;
+  border: 2px solid var(--text-color);
+  border-radius: 2px;
+}
